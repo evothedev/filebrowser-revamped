@@ -18,7 +18,10 @@ Added new themes with active preview cards.
 
 Added the ability to extract zip, archives etc. (Huge)
 
+**Images:** 
 
+<img src="https://foxtailsolutions.cloud/vault/demo.png" alt="App Screenshot" width="400">
+<img src="https://foxtailsolutions.cloud/vault/demo2.png" alt="App Screenshot" width="400">
 
 
 
