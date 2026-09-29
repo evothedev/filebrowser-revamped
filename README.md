@@ -1,6 +1,8 @@
 > [!WARNING]
 > 
-> **File Browser is archived on 2026-09-01**. The last planned release has already shipped. There will be no further releases, bug fixes, or security fixes.   
+> **File browser is back but not by original owner.**
+>
+> **Updates being posted here:** Stay tuned. I'm not the original owner as stated below just maintaining the project and adding new features.
 
 <p align="center">
   <img src="./branding/banner.png" width="550"/>
@@ -8,8 +10,23 @@
 
 File Browser provides a file managing interface within a specified directory and it can be used to upload, delete, preview and edit your files. It is a **create-your-own-cloud**-kind of software where you can just install it on your server, direct it to a path and access your files through a nice web interface.
 
-**Background:** [Goodbye File Browser, for Real This Time](https://hacdias.com/2026/07/28/filebrowser/), July 2026.
+**INFO:** IM not the original owner just making changes to file browser to keep it alive!
 
+**Update log**
+
+Added new themes with active preview cards.
+
+Added the ability to extract zip, archives etc. (Huge)
+
+
+
+
+
+
+
+## Old Notes:
+
+```
 ## Security
 
 Published advisories are listed under [security advisories](https://github.com/filebrowser/filebrowser/security/advisories),
@@ -34,3 +51,4 @@ Documentation on how to install, configure, and build this project lives in [`do
 ## License
 
 [Apache License 2.0](LICENSE) © File Browser Contributors
+```
