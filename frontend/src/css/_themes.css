@@ -1,0 +1,311 @@
+/* Named themes.
+ *
+ * Everything is expressed through the same custom properties as _variables.css,
+ * so a theme only has to fill those in. The active theme is the class on
+ * <html>, which means a new theme needs nothing here beyond these variables.
+ *
+ * Each block sets every property rather than only the ones that differ from
+ * :root, so a theme is readable on its own and cannot inherit a colour that
+ * belongs to a different palette.
+ */
+
+/* ---------------------------------------------------------------- Nord (dark)
+ *
+ * Polar Night #2E3440 #3B4252 #434C5E #4C566A, Snow Storm #D8DEE9 #E5E9F0
+ * #ECEFF4, Frost #8FBCBB #88C0D0 #81A1C1 #5E81AC, and the accents #BF616A
+ * #D08770 #EBCB8B #A3BE8C #B48EAD.
+ */
+
+:root.nord-dark {
+  --blue: #88c0d0;
+  --dark-blue: #81a1c1;
+  --red: #bf616a;
+  --dark-red: #9d5058;
+  --moon-grey: #4c566a;
+
+  --icon-red: #bf616a;
+  --icon-orange: #d08770;
+  --icon-yellow: #ebcb8b;
+  --icon-green: #a3be8c;
+  --icon-blue: #88c0d0;
+  --icon-violet: #b48ead;
+
+  --input-red: #4a2f34;
+  --input-green: #33412f;
+
+  --item-selected: #eceff4;
+
+  --action: #d8dee9;
+  --flat-grey: #a9b3c0;
+
+  --background: #2e3440;
+  --surfacePrimary: #3b4252;
+  --surfaceSecondary: #434c5e;
+  --divider: rgba(216, 222, 233, 0.08);
+  --iconPrimary: #eceff4;
+  --iconSecondary: #2e3440;
+  --iconTertiary: #4c566a;
+  --textPrimary: rgba(216, 222, 233, 0.72);
+  --textSecondary: #eceff4;
+  --hover: rgba(216, 222, 233, 0.08);
+  --borderPrimary: rgba(216, 222, 233, 0.1);
+  --borderSecondary: rgba(216, 222, 233, 0.2);
+  --dividerPrimary: rgba(236, 239, 244, 0.06);
+  --dividerSecondary: rgba(236, 239, 244, 0.12);
+}
+
+/* ------------------------------------------------------------------- Nord (light) */
+
+:root.nord-light {
+  --blue: #5e81ac;
+  --dark-blue: #4c6a94;
+  --red: #bf616a;
+  --dark-red: #a4505a;
+  --moon-grey: #d8dee9;
+
+  --icon-red: #b4505a;
+  --icon-orange: #c4776a;
+  --icon-yellow: #b3923f;
+  --icon-green: #7ea06b;
+  --icon-blue: #5e81ac;
+  --icon-violet: #a2809b;
+
+  --input-red: rgb(252, 208, 205);
+  --input-green: rgb(201, 242, 218);
+
+  --item-selected: #2e3440;
+
+  --action: #4c566a;
+  --flat-grey: #6f6f6f;
+
+  --background: #eceff4;
+  --surfacePrimary: #ffffff;
+  --surfaceSecondary: #e5e9f0;
+  --divider: rgba(46, 52, 64, 0.06);
+  --iconPrimary: #5e81ac;
+  --iconSecondary: #ffffff;
+  --iconTertiary: #d8dee9;
+  --textPrimary: #4c566a;
+  --textSecondary: #2e3440;
+  --hover: rgba(46, 52, 64, 0.08);
+  --borderPrimary: rgba(46, 52, 64, 0.1);
+  --borderSecondary: rgba(46, 52, 64, 0.2);
+  --dividerPrimary: rgba(255, 255, 255, 0.4);
+  --dividerSecondary: rgba(255, 255, 255, 0.9);
+}
+
+/* ------------------------------------------------------------- Solarized (dark)
+ *
+ * base03 #002B36, base02 #073642, base01 #586E75, base00 #657B83, base0 #839496,
+ * base1 #93A1A1, and the accents #DC322F #CB4B16 #B58900 #859900 #2AA198
+ * #268BD2 #6C71C4 #D33682.
+ */
+
+:root.solarized-dark {
+  --blue: #268bd2;
+  --dark-blue: #1f6f9f;
+  --red: #dc322f;
+  --dark-red: #a82825;
+  --moon-grey: #586e75;
+
+  --icon-red: #dc322f;
+  --icon-orange: #cb4b16;
+  --icon-yellow: #b58900;
+  --icon-green: #859900;
+  --icon-blue: #268bd2;
+  --icon-violet: #6c71c4;
+
+  --input-red: #3d2020;
+  --input-green: #1e3312;
+
+  --item-selected: #eee8d5;
+
+  --action: #93a1a1;
+  --flat-grey: #93a1a1;
+
+  --background: #002b36;
+  --surfacePrimary: #073642;
+  --surfaceSecondary: #0a4553;
+  --divider: rgba(147, 161, 161, 0.12);
+  --iconPrimary: #93a1a1;
+  --iconSecondary: #002b36;
+  --iconTertiary: #586e75;
+  --textPrimary: rgba(147, 161, 161, 0.75);
+  --textSecondary: #eee8d5;
+  --hover: rgba(147, 161, 161, 0.1);
+  --borderPrimary: rgba(147, 161, 161, 0.1);
+  --borderSecondary: rgba(147, 161, 161, 0.22);
+  --dividerPrimary: rgba(238, 232, 213, 0.06);
+  --dividerSecondary: rgba(238, 232, 213, 0.12);
+}
+
+/* ------------------------------------------------------------ Solarized (light) */
+
+:root.solarized-light {
+  --blue: #268bd2;
+  --dark-blue: #1f6f9f;
+  --red: #dc322f;
+  --dark-red: #a82825;
+  --moon-grey: #eee8d5;
+
+  --icon-red: #c62f2c;
+  --icon-orange: #b0440f;
+  --icon-yellow: #9a7500;
+  --icon-green: #718600;
+  --icon-blue: #268bd2;
+  --icon-violet: #6269b0;
+
+  --input-red: rgb(252, 208, 205);
+  --input-green: rgb(201, 242, 218);
+
+  --item-selected: #002b36;
+
+  --action: #657b83;
+  --flat-grey: #6f6f6f;
+
+  --background: #fdf6e3;
+  --surfacePrimary: #eee8d5;
+  --surfaceSecondary: #e4ddc8;
+  --divider: rgba(101, 123, 131, 0.16);
+  --iconPrimary: #268bd2;
+  --iconSecondary: #fdf6e3;
+  --iconTertiary: #eee8d5;
+  --textPrimary: #93a1a1;
+  --textSecondary: #586e75;
+  --hover: rgba(101, 123, 131, 0.1);
+  --borderPrimary: rgba(101, 123, 131, 0.2);
+  --borderSecondary: rgba(101, 123, 131, 0.35);
+  --dividerPrimary: rgba(255, 255, 255, 0.4);
+  --dividerSecondary: rgba(255, 255, 255, 0.9);
+}
+
+/* ------------------------------------------------------------- Gruvbox (dark)
+ *
+ * bg #282828, bg1 #3C3836, bg2 #504945, fg #EBDBB2, fg1 #D5C4A1, gray #928374,
+ * and the accents #FB4934 #FE8019 #FABD2F #B8BB26 #8EC07C #83A598 #D3869B.
+ */
+
+:root.gruvbox-dark {
+  --blue: #83a598;
+  --dark-blue: #6f9184;
+  --red: #fb4934;
+  --dark-red: #c33d2c;
+  --moon-grey: #504945;
+
+  --icon-red: #fb4934;
+  --icon-orange: #fe8019;
+  --icon-yellow: #fabd2f;
+  --icon-green: #b8bb26;
+  --icon-blue: #83a598;
+  --icon-violet: #d3869b;
+
+  --input-red: #4a1f18;
+  --input-green: #33361a;
+
+  --item-selected: #ebdbb2;
+
+  --action: #d5c4a1;
+  --flat-grey: #a89984;
+
+  --background: #282828;
+  --surfacePrimary: #3c3836;
+  --surfaceSecondary: #504945;
+  --divider: rgba(235, 219, 178, 0.1);
+  --iconPrimary: #d5c4a1;
+  --iconSecondary: #282828;
+  --iconTertiary: #665c54;
+  --textPrimary: rgba(215, 196, 161, 0.72);
+  --textSecondary: #ebdbb2;
+  --hover: rgba(235, 219, 178, 0.08);
+  --borderPrimary: rgba(235, 219, 178, 0.12);
+  --borderSecondary: rgba(235, 219, 178, 0.24);
+  --dividerPrimary: rgba(235, 219, 178, 0.06);
+  --dividerSecondary: rgba(235, 219, 178, 0.12);
+}
+
+/* ------------------------------------------------------------ Gruvbox (light) */
+
+:root.gruvbox-light {
+  --blue: #458588;
+  --dark-blue: #3a6f72;
+  --red: #cc241d;
+  --dark-red: #a81f1a;
+  --moon-grey: #ebdbb2;
+
+  --icon-red: #b52c26;
+  --icon-orange: #b8550c;
+  --icon-yellow: #a07a1c;
+  --icon-green: #7c8115;
+  --icon-blue: #458588;
+  --icon-violet: #9c5379;
+
+  --input-red: rgb(252, 208, 205);
+  --input-green: rgb(201, 242, 218);
+
+  --item-selected: #282828;
+
+  --action: #665c54;
+  --flat-grey: #6f6f6f;
+
+  --background: #f2e5bc;
+  --surfacePrimary: #fbf1c7;
+  --surfaceSecondary: #ebdbb2;
+  --divider: rgba(102, 92, 84, 0.18);
+  --iconPrimary: #458588;
+  --iconSecondary: #fbf1c7;
+  --iconTertiary: #ebdbb2;
+  --textPrimary: #7c6f64;
+  --textSecondary: #3c3836;
+  --hover: rgba(60, 56, 54, 0.08);
+  --borderPrimary: rgba(60, 56, 54, 0.15);
+  --borderSecondary: rgba(60, 56, 54, 0.3);
+  --dividerPrimary: rgba(255, 255, 255, 0.4);
+  --dividerSecondary: rgba(255, 255, 255, 0.9);
+}
+
+/* ------------------------------------------------------------------- Dracula
+ *
+ * bg #282A36, current line #44475A, foreground #F8F8F2, comment #6272A4, and the
+ * accents #FF5555 #FFB86C #F1FA8C #50FA7B #8BE9FD #BD93F9 #FF79C6.
+ *
+ * Dracula has no light variant, so it has no counterpart to toggle to; the
+ * toggle falls back to the plain light theme.
+ */
+
+:root.dracula {
+  --blue: #bd93f9;
+  --dark-blue: #a374e0;
+  --red: #ff5555;
+  --dark-red: #cc3f3f;
+  --moon-grey: #44475a;
+
+  --icon-red: #ff5555;
+  --icon-orange: #ffb86c;
+  --icon-yellow: #f1fa8c;
+  --icon-green: #50fa7b;
+  --icon-blue: #8be9fd;
+  --icon-violet: #bd93f9;
+
+  --input-red: #46202a;
+  --input-green: #1d3b2a;
+
+  --item-selected: #f8f8f2;
+
+  --action: #f8f8f2;
+  --flat-grey: #b8bac0;
+
+  --background: #282a36;
+  --surfacePrimary: #343746;
+  --surfaceSecondary: #44475a;
+  --divider: rgba(248, 248, 242, 0.1);
+  --iconPrimary: #f8f8f2;
+  --iconSecondary: #282a36;
+  --iconTertiary: #6272a4;
+  --textPrimary: rgba(189, 195, 206, 0.75);
+  --textSecondary: #f8f8f2;
+  --hover: rgba(248, 248, 242, 0.08);
+  --borderPrimary: rgba(248, 248, 242, 0.1);
+  --borderSecondary: rgba(248, 248, 242, 0.2);
+  --dividerPrimary: rgba(248, 248, 242, 0.06);
+  --dividerSecondary: rgba(248, 248, 242, 0.12);
+}
